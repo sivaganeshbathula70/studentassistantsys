@@ -1,0 +1,45 @@
+.weather-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -33px; /* Adjusted margin */
+  }
+  
+  .weather-box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .weather-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .weather-detail {
+    display: flex;
+    align-items: center;
+  }
+  
+  .weather-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .weather-list li {
+    margin-bottom: 10px;
+  }
+  
+  .weather-list li strong {
+    font-weight: bold;
+  }
+  
+  .weather-icon {
+    margin-right: 20px;
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+  }

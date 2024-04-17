@@ -1,0 +1,42 @@
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Slide Navbar</title>
+  <link rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="main">
+    <input type="checkbox" id="chk" aria-hidden="true">
+
+    <div class="signup">
+      <form (ngSubmit)="signUp()">
+        <label for="chk" aria-hidden="true">Sign up</label>
+        <input type="text" name="userName" placeholder="UserName" [(ngModel)]="user.userName" required>
+        <input type="password" name="password" placeholder="Password" [(ngModel)]="user.password" required>
+        <input type="text" name="role" placeholder="Role" [(ngModel)]="user.role" required>
+        <button type="submit">Sign up</button>
+        <div *ngIf="signUpMessage" style="color: black;">{{ signUpMessage }}</div>
+      </form>
+    </div>
+
+    <div class="login">
+      <form (ngSubmit)="login()">
+        <label for="chk" aria-hidden="true">Login</label>
+    <input type="text" name="userName" placeholder="Username" [(ngModel)]="user.userName">
+        <input type="password" name="password" placeholder="Password" [(ngModel)]="user.password">
+        <button type="submit">Login</button>
+        <div *ngIf="errorMessage" style="color: red;">{{ errorMessage }}</div>
+      </form>
+    </div>
+
+  </div>
+  <router-outlet></router-outlet>
+</body>
+
+</html>

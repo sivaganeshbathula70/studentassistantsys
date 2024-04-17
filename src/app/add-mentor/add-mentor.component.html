@@ -1,0 +1,20 @@
+<p>add-mentor works!</p>
+<div class="container">
+    <form  (ngSubmit)="addMentor()">
+        <div class="form-group">
+            <!--<label for="mentorId">mentorId</label>
+            <input type ="text" name="mentorId" id="mentorId" [(ngModel)]="mentor.mentorId" #mentorId="ngModel">-->
+            <label for="mentorName">mentorName</label>
+            <input type="text" name="mentorName" id ="mentorName" [(ngModel)]="mentor.mentorName" #mentorName="ngModel">
+            <label for= "status">status</label>
+            <input type="text"   name="status"  id="status" [(ngModel)]="mentor.status" #status="ngModel">
+            <label for="specilization">specilization</label>
+            <input type="text" name="specilization" id="specilization" [(ngModel)]="mentor.specilization" #specilization="ngModel">
+            <label for="experience">experience</label>
+            <input type="text" name="experience" id="experience" [(ngModel)]="mentor.experience" #experience="ngModel">
+            <label for="Appointtime">Appointtime</label>
+            <input type="text" name="Appointtime" id="Appointtime" [(ngModel)]="mentor.Appointtime" #Appointtime="ngModel">
+           </div>
+        <button type="submit" class="btn-success">Submit</button>
+    </form>
+    </div>
