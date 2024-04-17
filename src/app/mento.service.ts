@@ -8,7 +8,7 @@ import { Mentor } from './Mentor';
   providedIn: 'root'
 })
 export class MentoService {
-  private baseUrl1 = 'http://localhost:5757/api/assistant';
+  private baseUrl1 = 'https://txqg4w47j0.execute-api.us-east-2.amazonaws.com/stag1/api/assistant';
 
   constructor(private http: HttpClient) { }
   signUp(user: User): Observable<any> {
